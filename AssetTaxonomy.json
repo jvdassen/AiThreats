@@ -386,7 +386,7 @@
         "Category": "Artefacts",
         "Asset": "Descriptive Statistical Parameters",
         "Definition": "Descriptive statistical parameters are the quantities that characterize the probability distribution of a statistic or a random variable. They can be regarded as a numerical characteristic of statistical populations. Parametric probability distributions include the normal or Gaussian distribution, the Poisson distribution, the binomial and the exponential family of distributions. For instance, the family of normal distributions has two parameters, the mean and the variance: if those are specified, the distribution is known exactly. Statistical parameters are sometimes unobservable; in this case it is the data scientists’ task to infer what they can about the parameter, based on a random sample taken from the population of interest.",
-        "AI Lifecycle Stage": "Data Exploration",
+        "AI Lifecycle Stage": "Data Exploration"
     },
     {
         "Category": "Artefacts",
