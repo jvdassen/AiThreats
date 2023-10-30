@@ -60,67 +60,67 @@
         "AI Lifecycle Stage": "Model Tuning"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Algorithms",
         "Definition": "ML algorithms are programs (math and logic) that adjust themselves to perform better as they are exposed to more data. The “learning” part of ML means that those programs change how they process data over time, much as humans change how they process data by learning. So a ML algorithm is a program with a specific way to adjusting its own parameters, given feedback on its previous performance in making predictions about a dataset.",
         "AI Lifecycle Stage": "Model Training"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Algorithms",
         "Definition": "The data pre-processing employs techniques to clean, integrate and transform the data, resulting in improved data quality that will improve performance and efficiency by saving time during the analytic models’ training phase and by promoting a better quality of results. Specifically, the term data cleaning designates techniques to correct inconsistencies, remove noise and anonymize/pseudonymize data.",
         "AI Lifecycle Stage": "Data Pre-processing"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Hyper-parameters",
         "Definition": "Hyper-parameters define high-level concepts about ML models, such as the frequency of the adjustment of the internal parameters on the part of the training algorithm. They cannot be learned from input data but need to be set by trial-and-error using model space search techniques.",
         "AI Lifecycle Stage": "Model Tuning"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Training Algorithms",
         "Definition": "Training algorithms are procedures for adjusting the parameters of ML models. In supervised training, the correct output for each input vector of a training set is presented to the model, and multiple iterations through the training data may be required to adjust the parameters. In unsupervised training, the model parameters are adjusted without specifying the correct output for any of the input vectors.",
         "AI Lifecycle Stage": "Model Selection / Building"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Model",
         "Definition": "The term ML model designates computer algorithms implementing parametric mathematical models that improve through experience.",
         "AI Lifecycle Stage": "Model Training, Model Tuning, Model Selection / Building, Model Deployment, Model Maintenance"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Model parameters",
         "Definition": "A model parameter is a configuration variable that is internal to the model and whose value can be estimated from the given data.",
         "AI Lifecycle Stage": "Model Training"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Model performance",
         "Definition": "The ML model performance is the accuracy and speed of the model’s computation that receives inputs from the production-ready environment and outputs the model’s classifications, predictions, or decisions.",
         "AI Lifecycle Stage": "Model Training, Model Tuning"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Subspace (Feature) selection Algorithm",
         "Definition": "Feature selection algorithms are techniques that select a subset of relevant features from an original feature set, in order to increase the performance of ML models trained on the subset. Some feature selection methods used for classification problems are supervised and use class labels as a guide.",
         "AI Lifecycle Stage": "Feature Selection"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Trained models",
         "Definition": "A trained ML model is a model whose internal parameters have been adjusted by training to reach a minimum of the error function that defines the distance between the actual and expected outputs.",
         "AI Lifecycle Stage": "Model Training, Transfer Learning"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Training parameters",
         "Definition": "ML model training parameters are quantities adjusted by the learning process by applying training algorithms based on training data. Training parameters values determine the actual classification, prediction, or detection function computed by the ML model.",
         "AI Lifecycle Stage": "Model Selection / Building, Model Training"
     },
     {
-        "Category": "Models",
+        "Category": "Model",
         "Asset": "Tuned Model",
         "Definition": "A tuned ML model is a model where the hyper-parameters affecting the training algorithm operation have been set to maximize the convergence and speed of the training algorithm.",
         "AI Lifecycle Stage": "Model Tuning"
@@ -251,97 +251,97 @@
         "AI Lifecycle Stage": "Feature Selection"
     },
   {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Cloud",
         "Definition": "It is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user. The term is generally used to describe data centres available to many users over the Internet.",
         "AI Lifecycle Stage": "Data Ingestion, Model Training, Model Tuning"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Communication networks",
         "Definition": "Networks with internet connectivity for communication purposes.",
         "AI Lifecycle Stage": "Data Ingestion"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Communication protocols",
         "Definition": "Communication protocol is a system of rules that allows two or more entities of a communications system to transmit information via any kind of variation of a physical quantity. The protocol defines the rules, syntax, semantics, and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both.",
         "AI Lifecycle Stage": "Data Ingestion"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Computational platforms",
         "Definition": "It is the environment in which a piece of software is executed. It may be the hardware or the operating system (OS), even a web browser and associated application programming interfaces, or other underlying software, as long as the program code is executed with it.",
         "AI Lifecycle Stage": "Data Pre-processing, Feature Selection, Model Selection / Building, Model Training, Model Tuning, Transfer Learning, Model Deployment, Model Maintenance"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Data exploration tools",
         "Definition": "The tools used for data exploration. Tools such as visualization tools and charting features are frequently used to create a more straightforward view of data sets than simply examining thousands of individual numbers or names.",
         "AI Lifecycle Stage": "Data Exploration"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Data ingestion platforms",
         "Definition": "It is the platform where data ingestion takes place.",
         "AI Lifecycle Stage": "Data Ingestion"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Database management system",
         "Definition": "It is the software that handles the storage, retrieval, and updating of data in a computer system.",
         "AI Lifecycle Stage": "Data Ingestion"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Distributed File System",
         "Definition": "File System Distribution is a method for storing and accessing files, which allows for multiple users to access and share files from multiple machines, or multiple hosts, via a computer network. Control of information access and authorization is critical. In the context of distributed file systems, distributed databases and data stored in the cloud are encompassed.",
         "AI Lifecycle Stage": "Data Ingestion"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Integrated Development Environment",
         "Definition": "It is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools, and a debugger.",
         "AI Lifecycle Stage": "Data Pre-processing, Feature Selection, Model Selection / Building, Model Training, Model Tuning"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Libraries (with algorithms for transformation, labeling, etc)",
         "Definition": "Pre-written programs implementing algorithms ready to be used, for scientific computation, tabular data, Time-Series Analysis, Data Modeling and Preprocessing, deep learning, among others. Their usage saves time and facilitates the development of high-level analytical functions, even for less trained ML developers. Some examples are Apache Spark MLlib, Scikit-learn Python, Keras Python, etc.",
         "AI Lifecycle Stage": "Data Exploration, Data Pre-processing, Feature Selection, Model Selection / Building, Model Training, Model Tuning"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Machine Learning Platforms",
         "Definition": "Provide an ecosystem of tools, libraries, and resources that support the development of machine learning applications.",
         "AI Lifecycle Stage": "Data Exploration, Data Pre-processing, Feature Selection, Model Selection / Building, Model Training, Model Tuning, Model Deployment, Model Maintenance"
     },
   {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Monitoring Tools",
         "Definition": "Tools that are used to continuously keep track of the status of the system in use, in order to have the earliest warning of failures, defects, or problems and to improve them.",
         "AI Lifecycle Stage": "Data Pre-processing, Feature Selection, Model Selection / Building, Model Training, Model Tuning, Transfer Learning, Model Deployment, Model Maintenance"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Operating System/software",
         "Definition": "It manages computer hardware, software resources, and provides common services for computer programs.",
         "AI Lifecycle Stage": "Model Deployment, Model Maintenance"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Optimization techniques",
         "Definition": "Techniques used for optimization in model tuning such as Grid Search, Random Search, and Bayesian optimization.",
         "AI Lifecycle Stage": "Model Tuning"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Processors",
         "Definition": "A processor is the part of a computer that interprets commands and performs the processes the user has requested.",
         "AI Lifecycle Stage": "All Stages"
     },
     {
-        "Category": "Environment/Tools (hardware/software)",
+        "Category": "Environment/tools",
         "Asset": "Visualization tools",
         "Definition": "Any program, utility, routine, or function that performs an operation by dragging and dropping icons or by 'drawing' the solution. Visual tools are the norm in virtually every graphics-based application.",
         "AI Lifecycle Stage": "Data Exploration"

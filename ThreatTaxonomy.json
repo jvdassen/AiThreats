@@ -32,7 +32,7 @@
         "Threat": "Compromise and limit AI results",
         "Description": "This type of threat can emerge due to involuntary or unintentionally actions from Data Owners, that may hide data due to business secrets or by not recognizing its value; by AI/ML designers and engineers, that can intentionally tamper or, due to lack of experience, miss to include data. This threat may also be related to AI/ML service users not being able to understand the model capabilities and/or results.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Model, Actors, Artefacts"
+        "Affected assets": "Model, Actor, Artefacts"
     },
      {
         "Threat Category": "Nefarious Activity/Abuse",
@@ -67,7 +67,7 @@
         "Threat": "Compromise of data brokers/providers",
         "Description": "This threat refers to compromising data brokers/providers to influence the machine learning process as they can deliberately or accidentally manipulate the data sent to the AI process, in several different ways: poisoning-via-insertion of malicious data; deleting registries to eliminate features either by changing the data, removing part of it or adding new registries. In addition, sometimes the mere data availability prevails over any consideration on data quality, with the risk that learning models are fed with data streams that do not reflect the statistical characteristics of a phenomenon and determining likely biases in the subsequent decisional processes.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Actors"
+        "Affected assets": "Actor"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
@@ -88,14 +88,14 @@
         "Threat": "Data poisoning",
         "Description": "This threat relates to the injection of erroneous/tampered/wrong data in the training set or the validation set by either getting legitimate access or illegitimate one through exploiting poor authentication/authorization mechanisms. The aim is to adversely affect the operation of the AI system.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Process, Environment/tools, Model"
+        "Affected assets": "Processes, Environment/tools, Model"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
         "Threat": "Data tampering",
         "Description": "Actors like AI/ML designers and engineers can deliberately or unintentionally manipulate and expose data. Data can also be manipulated during the storage procedure and by means of some processes like feature selection. Besides interfering with model inference, this type of threat can also bring severe discriminatory issues by introducing bias.",
         "Potential Impact": "Availability, Integrity",
-        "Affected assets": "Process, Environment/tools, Model"
+        "Affected assets": "Processes, Environment/tools, Model"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
@@ -116,7 +116,7 @@
         "Threat": "Insider threat",
         "Description": "AI designers and developers may deliberately expose data and models for a variety of reasons, e.g. revenge or extortion. Integrity, data confidentiality and trustworthiness are the main impacted security properties.",
         "Potential Impact": "Integrity, Confidentiality, Availability",
-        "Affected assets": "Actors"
+        "Affected assets": "Actor"
     },   {
         "Threat Category": "Nefarious Activity/Abuse",
         "Threat": "Introduction of selection bias",
@@ -150,21 +150,21 @@
         "Threat": "Manipulation of model tuning",
         "Description": "Adversaries may fine-tune hyper-parameters and thus influence the AI system’s behavior. Changes to hyper-parameters can lead to overfitting or insider attacks. The usage of default hyper-parameters may increase the transferability of adversarial attacks.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Process, Model"
+        "Affected assets": "Processes, Model"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
         "Threat": "Manipulation of optimization algorithm",
         "Description": "Optimization algorithms are often used in the context of processes like Model Tuning to set up hyper-parameters values. Nefarious abuse of such algorithms by adversaries may lead to erroneous tuning of models.",
         "Potential Impact": "Availability",
-        "Affected assets": "Models, Processes"
+        "Affected assets": "Model, Processes"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
         "Threat": "Misclassification based on adversarial examples",
         "Description": "This threat involves the manipulation of model parameters or the use of adversarial examples during inference to force misclassification of model results. Actors with access to models and datasets, such as Cloud providers, model providers, and model users, are involved in this threat. Misclassification can also be instigated by Processes assets, such is the case of using adversarial examples during training and transfer learning stages, as well as during the inference stage.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Actors, Processes"
+        "Affected assets": "Actor, Processes"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
@@ -192,7 +192,7 @@
         "Threat": "Model poisoning",
         "Description": "This threat refers to a legitimate model file being replaced entirely by a poisoned model file. In the context of AI as a Service, with many types of data and code being uploaded on cloud infrastructures, this threat may be realized by exploiting potential weaknesses of cloud providers.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Models, Actors"
+        "Affected assets": "Model, Actor"
     },
     {
         "Threat Category": "Nefarious Activity/Abuse",
@@ -227,7 +227,7 @@
         "Threat": "Reduce effectiveness of AI/ML results",
         "Description": "Users can make erroneous usage of AI services, either for not having a good understanding about the model capabilities or by not being able to understand when changes in the process imply model maintenance, and possibly re-training procedures. End-users can modify the input data to the model that results in “de-training” the model.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Processes, Actors"
+        "Affected assets": "Processes, Actor"
     },
      {
         "Threat Category": "Nefarious Activity/Abuse",
@@ -276,7 +276,7 @@
         "Threat": "Bias introduced by data owners",
         "Description": "Data Owners may try to hide information that will be fed to the AI systems as part of their business interests. Moreover, they are also people that may be biased themselves, as they tend to be far from raw data and may be incapable of giving good data to the models. This type of threat can severely affect trustworthiness of AI systems.",
         "Potential Impact": "Availability, Integrity",
-        "Affected assets": "Actors"
+        "Affected assets": "Actor"
     },
     {
         "Threat Category": "Unintentional Damage",
@@ -290,7 +290,7 @@
         "Threat": "Compromise and limit AI results",
         "Description": "This type of threat can emerge due to involuntary or unintentionally actions from Data Owners, that may hide data due to business secrets or by not recognizing its value; by AI/ML designers and engineers, that can intentionally tamper or, due to lack of experience, miss to include data. This threat may also be related to AI/ML service users not being able to understand the model capabilities and/or results.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Model, Actors, Artefacts"
+        "Affected assets": "Model, Actor, Artefacts"
     },
     {
         "Threat Category": "Unintentional Damage",
@@ -318,7 +318,7 @@
         "Threat": "Compromise of data brokers/providers",
         "Description": "This threat refers to compromising data brokers/providers to influence the machine learning process as they can deliberately or accidentally manipulate the data sent to the AI process, in several different ways: poisoning-via-insertion of malicious data; deleting registries to eliminate features either by changing the data, removing part of it or adding new registries. In addition, sometimes the mere data availability prevails over any consideration on data quality, with the risk that learning models are fed with data streams that do not reflect the statistical characteristics of a phenomenon and determining likely biases in the subsequent decisional processes.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Actors"
+        "Affected assets": "Actor"
     },
     {
         "Threat Category": "Unintentional Damage",
@@ -339,14 +339,14 @@
         "Threat": "Disclosure of personal information",
         "Description": "At all stages of the AI lifecycle, disclosure of personal information (either directly or by means of correlation) is a noteworthy threat. The threat is particularly manifested in the absence of verified data accuracy of sources, lack of data randomization, lack of pseudonymity mechanisms, etc.",
         "Potential Impact": "Confidentiality",
-        "Affected assets": "Data, Model, Processes, Actors, Artefacts, Environment/tools"
+        "Affected assets": "Data, Model, Processes, Actor, Artefacts, Environment/tools"
     },
     {
         "Threat Category": "Unintentional Damage",
         "Threat": "Erroneous configuration of models",
         "Description": "This type of threat materializes when models are used recklessly by end users (but also AI experts) without proper consideration of contextual factors that may not fit with the phenomenon being analyzed. Lack of expertise and proper knowledge of AI models’ operation are the main cause of these erroneous configurations.",
         "Potential Impact": "Integrity, Availability",
-        "Affected assets": "Processes, Actors"
+        "Affected assets": "Processes, Actor"
     },
     {
         "Threat Category": "Unintentional Damage",
@@ -374,7 +374,7 @@
         "Threat": "Misconfiguration or mishandling of AI system",
         "Description": "AI designers and developers may unintentionally expose data and models or may even misconfigure an AI system by mistake. Data confidentiality and trustworthiness are the main impacted security properties.",
         "Potential Impact": "Confidentiality",
-        "Affected assets": "Actors"
+        "Affected assets": "Actor"
     },
     {
         "Threat Category": "Unintentional Damage",
@@ -388,7 +388,7 @@
         "Threat": "ML Model Performance Degradation",
         "Description": "The performance of an AI’s system ML model may degrade due to the data governance policy, by omission or by corruption due to system crashes or loss of network connectivity.",
         "Potential Impact": "Availability, Confidentiality",
-        "Affected assets": "Process, Model"
+        "Affected assets": "Processes, Model"
     },
     {
         "Threat Category": "Unintentional Damage",
@@ -423,7 +423,7 @@
         "Threat": "Disclosure of personal information",
         "Description": "At all stages of the AI lifecycle, disclosure of personal information (either directly or by means of correlation) is a noteworthy threat. The threat is particularly manifested in the absence of verified data accuracy of sources, lack of data randomization, lack of pseudonymity mechanisms , etc.",
         "Potential Impact": "Confidentiality",
-        "Affected assets": "Data, Model, Processes, Actors, Artefacts, Environment/tools"
+        "Affected assets": "Data, Model, Processes, Actor, Artefacts, Environment/tools"
     },
 
     {
@@ -438,7 +438,7 @@
         "Threat": "Lack of data protection compliance of 3rd parties",
         "Description": "Third parties are frequently used in providing and processing data, either directly or by means of libraries and models that they provide. This threat refers to the lack of compliance of third parties with respect to applicable data protection regulations.",
         "Potential Impact": "Confidentiality",
-        "Affected assets": "Actors"
+        "Affected assets": "Actor"
     },
     {
         "Threat Category": "Legal",
@@ -452,7 +452,7 @@
         "Threat": "SLA breach",
         "Description": "In the context of 3rd party dependencies, breach of contractual obligations and Service Level Agreements (SLAs) may lead to degradation of performance or even unavailability of the AI system to perform its operation.",
         "Potential Impact": "Availability",
-        "Affected assets": "Environment/tool"
+        "Affected assets": "Environment/tools"
     },
     {
         "Threat Category": "Legal",
