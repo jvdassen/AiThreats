@@ -1,49 +1,48 @@
 import json
 
-def find_threats_for_asset(asset_input):
-    # Load the AssetTaxonomy.json file
-    with open('AssetTaxonomy.json', 'r', encoding='utf-8') as asset_file:
-        asset_taxonomy = json.load(asset_file)
+def load_taxonomy(file_path):
+    with open(file_path, 'r', encoding='utf-8') as taxonomy_file:
+        return json.load(taxonomy_file)
 
-    # Load the ThreatTaxonomy.json file
-    with open('ThreatTaxonomy.json', 'r', encoding='utf-8') as threat_file:
-        threat_taxonomy = json.load(threat_file)
-
-    # Find the category for the given asset
-    category = None
+def find_category_for_asset(asset_input, asset_taxonomy):
+    asset_input_lower = asset_input.lower()
     for asset_entry in asset_taxonomy:
-        if asset_entry['Asset'].lower() == asset_input.lower():
-            category = asset_entry['Category']
-            break
+        if asset_entry['Asset'].lower() == asset_input_lower:
+            return asset_entry['Category']
+    return None
+
+def find_threats_for_category(category, threat_taxonomy):
+    threats = []
+    for threat_entry in threat_taxonomy:
+        if category in threat_entry['Affected assets']:
+            threats.append({
+                "Threat Category": threat_entry["Threat Category"],
+                "Threat": threat_entry["Threat"],
+                "Description": threat_entry["Description"],
+                "Potential Impact": threat_entry["Potential Impact"]
+            })
+    return threats
+
+def main():
+    asset_taxonomy = load_taxonomy('AssetTaxonomy.json')
+    threat_taxonomy = load_taxonomy('ThreatTaxonomy.json')
+
+    asset_input = input("Enter an asset: ")
+    category = find_category_for_asset(asset_input, asset_taxonomy)
 
     if category:
-        # Find threats related to the category
-        threats = []
-        for threat_entry in threat_taxonomy:
-            if category in threat_entry['Affected assets']:
-                threats.append({
-                    "Threat Category": threat_entry["Threat Category"],
-                    "Threat": threat_entry["Threat"],
-                    "Description": threat_entry["Description"],
-                    "Potential Impact": threat_entry["Potential Impact"]
-                })
-
+        threats = find_threats_for_category(category, threat_taxonomy)
         if threats:
-            return threats
+            for threat in threats:
+                print("Threat Category:", threat["Threat Category"])
+                print("Threat:", threat["Threat"])
+                print("Description:", threat["Description"])
+                print("Potential Impact:", threat["Potential Impact"])
+                print()
         else:
-            return "No threats found for the category: " + category
+            print("No threats found for the category:", category)
     else:
-        return "No threats found for the entered asset. Please check the spelling"
+        print("No threats found for the entered asset. Please check the spelling")
 
 if __name__ == '__main__':
-    asset_input = input("Enter an asset: ")
-    threats = find_threats_for_asset(asset_input)
-    if isinstance(threats, str):
-        print(threats)
-    else:
-        for threat in threats:
-            print("Threat Category:", threat["Threat Category"])
-            print("Threat:", threat["Threat"])
-            print("Description:", threat["Description"])
-            print("Potential Impact:", threat["Potential Impact"])
-            print()
+    main()
