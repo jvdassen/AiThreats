@@ -4,12 +4,14 @@ def load_taxonomy(file_path):
     with open(file_path, 'r', encoding='utf-8') as taxonomy_file:
         return json.load(taxonomy_file)
 
+
 def find_category_for_asset(asset_input, asset_taxonomy):
     asset_input_lower = asset_input.lower()
     for asset_entry in asset_taxonomy:
         if asset_entry['Asset'].lower() == asset_input_lower:
             return asset_entry['Category']
     return None
+
 
 def find_threats_for_category(category, threat_taxonomy):
     threats = []
