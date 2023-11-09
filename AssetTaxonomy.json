@@ -67,7 +67,7 @@
     },
     {
         "Category": "Model",
-        "Asset": "Algorithms",
+        "Asset": "Data Pre-Processing Algorithms",
         "Definition": "The data pre-processing employs techniques to clean, integrate and transform the data, resulting in improved data quality that will improve performance and efficiency by saving time during the analytic models’ training phase and by promoting a better quality of results. Specifically, the term data cleaning designates techniques to correct inconsistencies, remove noise and anonymize/pseudonymize data.",
         "AI Lifecycle Stage": "Data Pre-processing"
     },
