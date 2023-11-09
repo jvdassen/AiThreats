@@ -26,8 +26,8 @@ def find_threats_for_category(category, threat_taxonomy):
     return threats
 
 def main():
-    asset_taxonomy = load_taxonomy('AssetTaxonomy.json')
-    threat_taxonomy = load_taxonomy('ThreatTaxonomy.json')
+    asset_taxonomy = load_taxonomy('data/AssetTaxonomy.json')
+    threat_taxonomy = load_taxonomy('data/ThreatTaxonomy.json')
 
     asset_input = input("Enter an asset: ")
     category = find_category_for_asset(asset_input, asset_taxonomy)

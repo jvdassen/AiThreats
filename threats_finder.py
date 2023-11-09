@@ -29,11 +29,11 @@ def find_threats_for_category(category, threat_taxonomy):
 
 
 def main():
-    asset_taxonomy = load_taxonomy('AssetTaxonomy.json')
-    threat_taxonomy = load_taxonomy('ThreatTaxonomy.json')
+    asset_taxonomy = load_taxonomy('data/AssetTaxonomy.json')
+    threat_taxonomy = load_taxonomy('data/ThreatTaxonomy.json')
 
     # Load the XML file with assets
-    with open('TestFile.xml', 'r', encoding='utf-8') as xml_file:
+    with open('data/TestFile.xml', 'r', encoding='utf-8') as xml_file:
         xml_content = xml_file.read()
 
     #print(xml_content)
