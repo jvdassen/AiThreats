@@ -7,7 +7,7 @@ def load_taxonomy(file_path):
 
 
 def main():
-    asset_taxonomy = load_taxonomy('data/AssetTaxonomy.json')
+    asset_taxonomy = load_taxonomy('../data/AssetTaxonomy.json')
     count = 0
     for entry in asset_taxonomy:
         asset = entry.get('Asset')
