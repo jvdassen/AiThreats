@@ -35,9 +35,8 @@ def find_threats_for_category(category):
 def get_threats_by_asset(asset):
     category = find_category_for_asset(asset)
     asset_with_threat_objects = {'Identified Asset': asset,
-                     'Category': category,
-                     'Threats': []
-                     }
+                                 'Category': category,
+                                 'Threats': []}
     if category:
         threats = find_threats_for_category(category)
         if threats:
@@ -45,8 +44,7 @@ def get_threats_by_asset(asset):
     return asset_with_threat_objects
 
 
-def print_asset_with_threat_objects(asset_input):
-    asset_with_threat_objects = get_threats_by_asset(asset_input)
+def print_asset_with_threat_objects(asset_with_threat_objects):
     category = asset_with_threat_objects['Category']
     asset = asset_with_threat_objects['Identified Asset']
     if category is not None:
@@ -66,13 +64,18 @@ def print_asset_with_threat_objects(asset_input):
         print(f"No category found for the asset: {asset}. Please check the spelling")
 
 
-def find_threats():
-    # Load the XML file with assets
-    with open('data/TestFile.xml', 'r', encoding='utf-8') as xml_file:
-        xml_content = xml_file.read()
+def find_threats(xml_content=None):
+    if xml_content is None:
+        # Load the XML file with assets
+        with open('data/TestFile.xml', 'r', encoding='utf-8') as xml_file:
+            xml_content = xml_file.read()
+
+
     #print(xml_content)
     root = ET.fromstring(xml_content)
 
+    threats_result = list()
     for obj in root.findall(".//object"):
         asset_name = obj.get('assetname')
-        get_threats_by_asset(asset_name)
+        threats_result.append(get_threats_by_asset(asset_name))
+    return threats_result

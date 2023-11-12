@@ -12,7 +12,7 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 @app.post("/upload", response_model=str, status_code=200)
 async def upload_file(file: UploadFile = File(...)) -> JSONResponse:
     content = await file.read()
-    threats_result = find_threats()
+    threats_result = find_threats(content)
     return JSONResponse(content=jsonable_encoder(threats_result))
 
 if __name__ == "__main__":
