@@ -27,7 +27,8 @@ def find_threats_for_category(category):
                 "Threat Category": threat_entry["Threat Category"],
                 "Threat": threat_entry["Threat"],
                 "Description": threat_entry["Description"],
-                "Potential Impact": threat_entry["Potential Impact"]
+                "Potential Impact": threat_entry["Potential Impact"],
+                "Affected assets": threat_entry['Affected assets']
             })
     return threats
 
