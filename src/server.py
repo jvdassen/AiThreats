@@ -16,4 +16,4 @@ async def upload_file(file: UploadFile = File(...)):
     return JSONResponse(content=jsonable_encoder(threats_result))
 
 if __name__ == "__main__":
-    uvicorn.run("server:app", host="localhost", port=8080, reload=True, log_level="debug")
+    uvicorn.run("server:app", host="0.0.0.0", port=8080, reload=True, log_level="debug")
