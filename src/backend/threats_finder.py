@@ -7,8 +7,8 @@ def load_taxonomy(file_path):
         return json.load(taxonomy_file)
 
 
-asset_taxonomy = load_taxonomy('data/AssetTaxonomy.json')
-threat_taxonomy = load_taxonomy('data/ThreatTaxonomy.json')
+asset_taxonomy = load_taxonomy('../data/AssetTaxonomy.json')
+threat_taxonomy = load_taxonomy('../data/ThreatTaxonomy.json')
 
 
 def find_category_for_asset(asset_name):
