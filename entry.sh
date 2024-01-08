@@ -1,3 +1,4 @@
 cd /app/src
 pip install -r ../requirements.txt
-python server.py
+export PYTHONPATH=$(pwd)
+python3 backend/server.py
